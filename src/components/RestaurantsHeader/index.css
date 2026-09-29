@@ -1,0 +1,119 @@
+.restaurants-header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.restaurants-header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.popular-restaurants-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #183b56;
+  margin: 0;
+}
+
+.popular-restaurants-caption {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0;
+}
+
+.restaurants-actions-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 6px 12px;
+  gap: 8px;
+  transition: border-color 0.2s;
+}
+
+.search-input-container:focus-within {
+  border-color: #f7931e;
+}
+
+.search-icon {
+  font-size: 16px;
+  color: #64748b;
+}
+
+.restaurant-search-input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #1e293b;
+  width: 180px;
+  background: transparent;
+}
+
+.restaurant-search-input::placeholder {
+  color: #94a3b8;
+}
+
+.sort-by-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-icon {
+  font-size: 22px;
+  color: #475569;
+}
+
+.sort-by-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #475569;
+}
+
+.sort-by-select {
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  outline: none;
+  cursor: pointer;
+}
+
+.sort-by-select:focus {
+  border-color: #f7931e;
+}
+
+@media screen and (max-width: 640px) {
+  .restaurants-header-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sort-by-container {
+    align-self: flex-start;
+  }
+
+  .popular-restaurants-heading {
+    font-size: 22px;
+  }
+
+  .popular-restaurants-caption {
+    font-size: 13px;
+  }
+}

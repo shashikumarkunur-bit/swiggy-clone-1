@@ -1,0 +1,145 @@
+.login-form-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.login-card-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 24px;
+}
+
+.login-form-card {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 40px 32px;
+  background-color: #ffffff;
+}
+
+.login-logo-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-website-logo {
+  width: 50px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.login-website-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  color: #f7931e;
+  letter-spacing: 0.5px;
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 24px;
+  align-self: flex-start;
+}
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #475569;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.user-input {
+  height: 44px;
+  padding: 0 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #1e293b;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background-color: #f8fafc;
+}
+
+.user-input:focus {
+  border-color: #f7931e;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(247, 147, 30, 0.15);
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.login-button {
+  background-color: #f7931e;
+  color: #ffffff;
+  height: 44px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.1s;
+  margin-top: 4px;
+}
+
+.login-button:hover {
+  background-color: #e08316;
+}
+
+.login-button:active {
+  transform: scale(0.99);
+}
+
+.login-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login-image-container {
+  display: none;
+  flex: 1.2;
+  background-color: #fff8f0;
+}
+
+.login-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .login-image-container {
+    display: flex;
+  }
+}

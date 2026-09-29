@@ -1,0 +1,135 @@
+.navbar-container {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+}
+
+.navbar-logo-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo {
+  width: 44px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: 700;
+  font-style: italic;
+  color: #f7931e;
+  letter-spacing: 0.3px;
+}
+
+.desktop-nav-items {
+  display: none;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #475569;
+  position: relative;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.nav-link:hover {
+  color: #f7931e;
+}
+
+.active-nav-link {
+  color: #f7931e;
+  font-weight: 700;
+}
+
+.cart-badge {
+  background-color: #f7931e;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 50%;
+  min-width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 4px;
+}
+
+.logout-btn {
+  background-color: #f7931e;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background-color: #e08316;
+}
+
+.mobile-hamburger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #334155;
+}
+
+.mobile-nav-items {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  border-top: 1px solid #f1f5f9;
+  gap: 16px;
+}
+
+.mobile-nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mobile-logout-btn {
+  align-self: flex-start;
+  margin-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .desktop-nav-items {
+    display: flex;
+  }
+
+  .mobile-hamburger-btn {
+    display: none;
+  }
+
+  .mobile-nav-items {
+    display: none;
+  }
+}

@@ -1,0 +1,117 @@
+.food-item-card {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.food-item-image {
+  width: 120px;
+  height: 90px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.food-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+}
+
+.food-item-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.food-item-cost-container {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #334155;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.rupee-icon {
+  font-size: 12px;
+}
+
+.food-item-rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #ffcc00;
+}
+
+.star-icon {
+  font-size: 13px;
+}
+
+.rating-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.food-item-action {
+  margin-top: 6px;
+}
+
+.add-food-btn {
+  background-color: transparent;
+  color: #f7931e;
+  border: 1px solid #f7931e;
+  padding: 6px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  transition: all 0.2s;
+}
+
+.add-food-btn:hover {
+  background-color: #f7931e;
+  color: #ffffff;
+}
+
+.food-quantity-controller {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.quantity-controller-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #f8fafc;
+  color: #334155;
+  transition: background-color 0.2s;
+}
+
+.quantity-controller-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.controller-icon {
+  font-size: 16px;
+}
+
+.active-food-count {
+  min-width: 28px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+}

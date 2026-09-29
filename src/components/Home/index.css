@@ -1,0 +1,154 @@
+.home-route-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+}
+
+.home-body-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  flex-grow: 1;
+}
+
+.restaurants-header-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.popular-restaurants-heading {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 4px;
+}
+
+.popular-restaurants-caption {
+  font-size: 15px;
+  color: #64748b;
+}
+
+.sort-by-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-icon {
+  font-size: 24px;
+  color: #475569;
+}
+
+.sort-by-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.sort-by-select {
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e293b;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.sort-by-select:focus {
+  border-color: #f7931e;
+}
+
+.divider-line {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin-bottom: 32px;
+}
+
+.restaurants-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+@media screen and (min-width: 640px) {
+  .restaurants-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurants-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .restaurants-header-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.pagination-btn {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #cbd5e1;
+  background-color: #ffffff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e293b;
+  transition: all 0.2s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  border-color: #f7931e;
+  color: #f7931e;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-arrow-icon {
+  font-size: 20px;
+}
+
+.pagination-page-indicator {
+  font-size: 15px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.restaurants-error-container {
+  text-align: center;
+  padding: 60px 24px;
+}
+
+.retry-btn {
+  background-color: #f7931e;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-top: 16px;
+}
